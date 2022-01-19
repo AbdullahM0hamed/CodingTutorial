@@ -4,7 +4,8 @@
 
 # Introduction
 
-This guide will often demonstrate commands inside the python REPL (essentially the python shell), which can be accessed simply by running `python` and will be denoted with `>>>`. However, all excercises are expected to be completed by being written as a `.py` file and being executed using `python file.py`. For termux, I recommend installing `nano` (`pkg install nano`) as it is beginner friendly. You may exit once you are done by clicking CTRL once, then pressing x, or by holding the volume down key whikst pressing x (then pressing y to save).
+This guide will often demonstrate commands inside the python REPL (essentially the python shell), which can be accessed simply by running `python` and will be denoted with `>>>`. 
+However, all excercises are expected to be completed by being written as a `.py` file and being executed using `python file.py`. For termux, I recommend installing `nano` (`pkg install nano`) as it is beginner friendly. You may exit once you are done by clicking CTRL once, then pressing x, or by holding the volume down key whilst pressing x (then pressing y to save).
 
 It is recommended that you run the examples in the python shell yourself to maximise your ability to follow along.
 
@@ -13,15 +14,15 @@ It is recommended that you run the examples in the python shell yourself to maxi
 In order to make any interactive program, you need to be able to both display output and receive input. In python you can do these by:
 
 • Using `print`, e.g:
-    ```
-    >>> print("Negus of Ethiopia")
-    Negus of Ethiopia
-    ```
+```
+>>> print("Negus of Ethiopia")
+Negus of Ethiopia
+```
 
 • Using `input`, e.g:
-    ```
-    >>> input()
-    ```
+```
+>>> input()
+```
 
 As you can (or maybe can't lmao) see, `input()` by itself is not very useful, as it does not display anything to indicate that the iser *should* give input. Instead we can try:
 
@@ -85,20 +86,27 @@ You have selected the country of Niger
 ```
 
 # Excercises I
-    i) Write a script that takes a person's name, age, and country of residence and print it to them
-    ii) Write a script that takes a person's name and then tells them: "Name, you have been promoted to the Negus of Ethiopia"
+i) Write a script that takes a person's name, age, and country of residence and print it to them
+
+ii) Write a script that takes a person's name and then tells them: "Name, you have been promoted to the Negus of Ethiopia"
 
 # Variable types
 
-In programming languages, variables have types to distinguish the type of information they hold. While some languages are stringent by forcing all variables to be of 1 type ("Once you are the Negus of Ethiopia, you will always be the Negus of Ethiopia" ~kotlin), other languages allow you to change a variable's type as you go ("*I* gave you the Negus title, and I can take it away from you" ~python
+In programming languages, variables have types to distinguish the type of information they hold. While some languages are stringent by forcing all variables to be of 1 type ("Once you are the Negus of Ethiopia, you will always be the Negus of Ethiopia" ~kotlin), other languages allow you to change a variable's type as you go ("*I* gave you the Negus title, and I can take it away from you" ~python)
 
 In python the basic types are:
-    • str (short for string) - this stores text
-    • int (short for integer) - this stores whole number
-    • boolean - this stores either a `True` or a `False`
-    • list - this stores a list, i.e: [name, country]
-    • float - this stores decimals and/or whole numbers
-    • dict - stores key-value pair, e.g: {'EA': 'Sports'}
+
+• str (short for string) - this stores text
+
+• int (short for integer) - this stores whole number
+
+• boolean - this stores either a `True` or a `False`
+
+• list - this stores a list, i.e: [name, country]
+
+• float - this stores decimals and/or whole numbers
+
+• dict - stores key-value pair, e.g: {'EA': 'Sports'}
 
 The type a variable is affects how you can use it. For example:
 
@@ -136,15 +144,17 @@ Also, niiiiiiiice
 ```
 
 # Excercises II
+i) Write a script to calculate the year a user was born based on their age
 
-    i) Write a script to calculate the year a user was born based on their age
-    ii) Ask the user for the current year, and then subtract 2020 from that year. Then tell them they are off by x years (ie. y - 2020)
+ii) Ask the user for the current year, and then subtract 2020 from that year. Then tell them they are off by x years (ie. y - 2020)
 
 # Error handling
 
 Ah yes, errors - the bane of every programmer. In programs, it is very easy to get an error - you can get an error because:
-  • You're an idiot
-  • The programming language you are using is complete unintuitive and absolutely terrible (applicable for js)
+
+• You're an idiot
+
+• The programming language you are using is complete unintuitive and absolutely terrible (applicable for js)
 
 Based on what you *should* have learnt (and if you haven't, either go back or request my help), there are some ways you could already produce an error, such as casting user input:
 
@@ -157,7 +167,7 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'Negus of Ethiopia'
 ```
 
-This is pain because the error completely kills your program. However, do not fret - we are ready to learn how to try and catch thw Negus of Ethiopia. In python, we use what is known as a `try-except` clause (typically `try-catch` in other languages):
+This is pain because the error completely kills your program. However, do not fret - we are ready to learn how to try and catch the Negus of Ethiopia. In python, we use what is known as a `try-except` clause (typically `try-catch` in other languages):
 
 ```
 >>> try:
@@ -169,7 +179,7 @@ No you brain-dead moron, I asked for your age!!!!1!!!1!
 ```
 
 # Excercises III
-    i) Write a script that asks for the user's age, and tells them what year they were born in (probably - don't account for them being born in a month we haven't reached) - defend against errors
+i) Write a script that asks for the user's age, and tells them what year they were born in (probably - don't account for them being born in a month we haven't reached) - defend against errors
 
 # If statements
 
@@ -190,13 +200,19 @@ and the following code *never* runs:
 ...
 ```
 
-Obviously, you'll never actually write an if statement for code that you always want to run in all situations, nor will you ever write code that you specifically want to *never* happen - however if statements are good for when you need to run different code in different situations. You can get a boolean by comparing two variables of the same type using the following operators:
-    • ==, are the two variables equal - True if yes, False if no
-    • !=, are the two variables unequal - True if they are unequal
-    • >, is variable 1 greater than variable 2
-    • <, is variable 1 less than variable 2
-    • >=, is variable 1 greater than or equal to variable 2
-    • <= is variable 1 less than or equal to variable 1
+Obviously, you'll never actually write an if statement for code that you always want to run in all situations, nor will you ever write it for code that you specifically want to *never* happen - however if statements are good for when you need to run different code in different situations. You can get a boolean by comparing two variables of the same type using the following operators:
+
+• ==, are the two variables equal - True if yes, False if no
+
+• !=, are the two variables unequal - True if they are unequal
+
+• >, is variable 1 greater than variable 2
+
+• <, is variable 1 less than variable 2
+
+• >=, is variable 1 greater than or equal to variable 2
+
+• <= is variable 1 less than or equal to variable 1
 
 Side-Note: If the variables are of different types, but have the same "value", an equality check (==) will return `False` (i.e: "69" == 69).
 
@@ -239,8 +255,10 @@ To cover more than two cases you can do the following:
 Else statements are optional, and you do not ever *have* to use them. Else statements cannnot come before elif statements (else if in some languages).
 
 In an if/elif's statements condition block (i.e: age == 69), you can have multiple conditions. These can be split using:
-    • and (usually && in coding languages) - returns True if both conditions (condition before and condition after) return True
-    • or (usually || in coding languages) - returns True if either (1 or both) of the conditions (before and after symbol) return True
+
+• and (usually && in coding languages) - returns True if both conditions (condition before and condition after) return True
+
+• or (usually || in coding languages) - returns True if either (1 or both) of the conditions (before and after symbol) return True
 
 Examples:
 
@@ -284,12 +302,15 @@ If multiple statements are true, only the first one will run - for example:
 ```
 
 Some useful tips for conditions:
-    • len - checks the length of something - for example: `len(name)` will show how many characters there are in the string `name`.
-    • % - modulus operator, returns remainder if two numbers were to be divided by each other, e.g: `5 % 2` would return 2. This is especially usefully for checking if two numbers are divisible by each other such as: `6 % 3 == 0`
+
+• len - checks the length of something - for example: `len(name)` will show how many characters there are in the string `name`.
+
+• % - modulus operator, returns remainder if two numbers were to be divided by each other, e.g: `5 % 2` would return 2. This is especially usefully for checking if two numbers are divisible by each other such as: `6 % 3 == 0`
 
 # Excercises IV
-    i) Ask the user for a number, tell them whether the number was positive or negative [defend against errors]
-    ii) Take two numbers from the user, tell the user if they entered the same number or a different one
+i) Ask the user for a number, tell them whether the number was positive or negative [defend against errors]
+
+ii) Take two numbers from the user, tell the user if they entered the same number or a different one
 
 # Loops
 
@@ -372,10 +393,13 @@ If the item you are iterating is empty, then the for loop will simply never run.
 ```
 
 # Excercises V
-    i) Make a script that loops 100 times, make it say "Negus of Ethiopia" each time, but on the 70th iteration (where `i` is 69) make it say "Nice!"
-    ii) Ask someone for their age, and make the script count up to it
-    iii) Ask someone for a title, and keep asking until they give "Negus of Ethiopia"
-    iv) The classic: FizzBuzz - loop through the numbers 1 - 100. If the number is divisible by 3, print "Fizz". If it is divisible by 5, print "Buzz". If it is divisible by both - print "FizzBuzz". If it is divisible by neither print the number itself.
+i) Make a script that loops 100 times, make it say "Negus of Ethiopia" each time, but on the 70th iteration (where `i` is 69) make it say "Nice!"
+
+ii) Ask someone for their age, and make the script count up to it
+
+iii) Ask someone for a title, and keep asking until they give "Negus of Ethiopia"
+
+iv) The classic: FizzBuzz - loop through the numbers 1 - 100. If the number is divisible by 3, print "Fizz". If it is divisible by 5, print "Buzz". If it is divisible by both - print "FizzBuzz". If it is divisible by neither print the number itself.
 
 # Methods
 
