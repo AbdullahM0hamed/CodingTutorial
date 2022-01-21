@@ -46,7 +46,8 @@ Variables are the bread and butter of programming.You are never going to write a
 >>> name = input("What is your name? ")
 What is your name? Red
 >>> print(name)
-'Red'
+'
+Red
 ```
 
 # String concatenation
@@ -267,7 +268,7 @@ Examples:
 ```
 >>> title = "Negus of Ethiopia"
 >>> country = "Niger"
->>> country == "Niger" and title == "Queen of England":
+>>> country == "Niger" and title == "Queen of England"
 False
 ```
 
