@@ -275,21 +275,21 @@ False
 ```
 >>> title = "Negus of Ethiopia"
 >>> country = "Niger"
->>> country == "Nigeria" || title == "Queen of England"
+>>> country == "Nigeria" or title == "Queen of England"
 False
 ```
 
 ```
 >>> title = "Negus of Ethiopia"
 >>> country = "Niger"
->>> country == "Nigeria" || title == "Negus of Ethiopia"
+>>> country == "Nigeria" or title == "Negus of Ethiopia"
 True
 ```
 
 ```
 >>> title = "Negus of Ethiopia"
 >>> country = "Niger"
->>> country == "Niger" || title == "Negus of Ethiopia"
+>>> country == "Niger" or title == "Negus of Ethiopia"
 True
 ```
 
