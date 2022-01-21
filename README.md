@@ -301,7 +301,7 @@ If multiple statements are true, only the first one will run - for example:
 ... elif 2 == 2:
 ...   print(2)
 ...
-2
+1
 ```
 
 Some useful tips for conditions:
