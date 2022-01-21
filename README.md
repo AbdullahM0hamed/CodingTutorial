@@ -343,7 +343,7 @@ never runs. Typically you wouldn't actually write these two conditions - instead
 Enter your age: 10000000
 >>> while int(age) > 150:
 ...   print(f"You ain't {age}, why you lying")
-...   age = input("Enter your actual age: "
+...   age = input("Enter your actual age: ")
 ...
 ```
 
