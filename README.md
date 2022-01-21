@@ -214,6 +214,8 @@ Obviously, you'll never actually write an if statement for code that you always 
 
 • <= is variable 1 less than or equal to variable 1
 
+• `not` - used to negate a condition (e.g: `not True` returns `False`)
+
 Side-Note: If the variables are of different types, but have the same "value", an equality check (==) will return `False` (i.e: "69" == 69).
 
 Example of an if statement:
@@ -246,7 +248,7 @@ To cover more than two cases you can do the following:
 >>> age = input("Enter your age: ")
 >>> if age == "69":
 ...   print("Nice!")
-... elif age > 150:
+... elif int(age) > 150:
 ...   print("Why are you lying?")
 ... else:
 ...   print(f"Your age is {age}")
